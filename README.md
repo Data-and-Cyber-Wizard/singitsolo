@@ -3,10 +3,7 @@
 - [Overview](#overview)
 - [Features](#features)
 - [Technologies Used](#technologies-used)
-- [Installation](#installation)
 - [Usage](#usage)
-- 
-- [API Documentation](#api-documentation)
 - [Database Schema](#database-schema)
 - [App Flow](#app-flow)
 
@@ -95,7 +92,82 @@ For building a cloud-based karaoke application like **Sing It Solo**, we need a 
 - **Heroku** or **AWS Elastic Beanstalk** for easy deployment of your backend services.
 
 ---
+### Usage
+The **Sing It Solo** app is designed to be intuitive and easy to use for both patrons and venue managers. Below is a guide on how to use the app for both **users** (patrons) and **venue managers**.
 
+#### **For Users (Patrons)**
+
+1. **Sign Up / Log In**:
+   - Download and install the app from the [App Store](#) or [Google Play](#).
+   - Open the app and either sign up with your email or log in using your social media account (Google, Facebook, etc.).
+   - Once logged in, you'll be taken to the main screen where you can browse songs and see your current points balance.
+
+2. **Select a Song**:
+   - Browse the available song catalog using the search bar or genre filters.
+   - Select a song you would like to perform by tapping on it.
+   - After selecting a song, you'll be added to the "queue" of singers waiting to perform.
+
+3. **Join the Queue**:
+   - Once you've selected a song, you will be added to the queue to perform next (based on the order).
+   - The app will show the current singer, along with the song they're performing, and the remaining queue order.
+   - You can view your position in the queue, and the app will notify you when it's your turn to sing.
+
+4. **Wait for Your Turn**:
+   - When it's your turn to sing, the app will send you a push notification alerting you that it's time to perform.
+   - You can check in and confirm that you're ready to sing by tapping the "I'm Ready" button.
+   
+5. **Sing Your Song**:
+   - Once you're ready, tap the **Start Song** button to begin your karaoke performance.
+   - The lyrics will appear on your mobile device in **karaoke format** (with words highlighted as you sing).
+   - You can tap along to the lyrics to sync with the rhythm of the song.
+
+6. **Vote on Other Performances**:
+   - After a singer finishes, you can vote on their performance.
+   - A simple rating system (e.g., 1 to 5 stars) allows you to rate the singer’s performance.
+   - Voting gives you **points**, which can be redeemed for rewards at the venue.
+
+7. **Earn Points & Redeem Rewards**:
+   - After voting for others, you'll accumulate points.
+   - Once you have enough points, you can redeem them for rewards like a free drink, a side dish, or a meal at the venue.
+
+8. **Notifications**:
+   - The app will keep you updated on the queue status and will notify you of any upcoming events or rewards.
+
+#### **For Venue Managers**
+
+1. **Set Up Venue Information**:
+   - Log in as a venue manager to configure your venue profile.
+   - Enter venue details such as name, address, and available rewards (e.g., "Free Drink", "Meal", etc.).
+
+2. **Manage the Queue**:
+   - View the live queue of singers and their selected songs.
+   - The queue will update automatically as users add themselves to it.
+   - The current song and the singer are displayed in real-time on the venue's screen(s).
+
+3. **Display Lyrics**:
+   - Set up your venue’s screen(s) to display the lyrics in karaoke format as users sing.
+   - The lyrics will automatically synchronize with the singer’s performance, highlighting each word as they sing.
+   
+4. **Monitor Voting**:
+   - After each performance, manage the voting system to ensure users can rate singers’ performances.
+   - Voting will determine how many points the singer earns and allow for a more interactive and gamified experience for your patrons.
+
+5. **Track Rewards & Points**:
+   - Monitor the points earned by users through voting.
+   - Redeemable rewards (such as drinks or meals) can be set up and managed directly through the venue dashboard.
+   
+6. **Push Notifications for Turn Management**:
+   - You can manually send push notifications to users to let them know when it’s their turn to sing, or let them know if the queue is getting full.
+
+7. **Engage Your Audience**:
+   - The app will keep patrons entertained with real-time updates and feedback. Users will enjoy voting, viewing lyrics, and engaging in a dynamic, competitive karaoke experience.
+
+### Tips for a Great Karaoke Event:
+- Ensure the venue’s screen(s) are set up for the lyrics display so that everyone can sing along.
+- Encourage users to vote on each other's performances to earn points and create a competitive atmosphere.
+- Offer fun, venue-specific rewards that users can redeem with their points to keep patrons engaged and coming back.
+
+With **Sing It Solo**, you can easily host dynamic, engaging karaoke events that keep your patrons entertained while also increasing user interaction and loyalty through voting and rewards.
 ### Database-Schema
 
 Below is a potential database schema for **Sing It Solo**, with collections/tables designed for users, songs, queues, votes, and rewards. We'll use **MongoDB** as an example, given its flexibility with document-based data.
